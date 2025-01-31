@@ -12,7 +12,7 @@ plugins {
 }
 
 checkstyle {
-    config = resources.text.fromFile(file("config/checkstyle/checkstyle.xml"))
+    config = resources.text.fromFile(file("${project.rootDir}"))
     toolVersion = "10.21.2"
 }
 
